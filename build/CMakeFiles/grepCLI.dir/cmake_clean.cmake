@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/grepCLI.dir/link.d"
+  "CMakeFiles/grepCLI.dir/src/grep.cpp.o"
+  "CMakeFiles/grepCLI.dir/src/grep.cpp.o.d"
   "CMakeFiles/grepCLI.dir/src/main.cpp.o"
   "CMakeFiles/grepCLI.dir/src/main.cpp.o.d"
   "grepCLI"

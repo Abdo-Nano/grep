@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = "/mnt/sdb1/computer science/projects/grepCLI/build"
 
 # The main recursive "all" target.
 all: CMakeFiles/grepCLI.dir/all
+all: CMakeFiles/tests.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/grepCLI.dir/codegen
+codegen: CMakeFiles/tests.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/grepCLI.dir/clean
+clean: CMakeFiles/tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +88,12 @@ clean: CMakeFiles/grepCLI.dir/clean
 CMakeFiles/grepCLI.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=1,2 "Built target grepCLI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=1,2,3 "Built target grepCLI"
 .PHONY : CMakeFiles/grepCLI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/grepCLI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/grepCLI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 0
 .PHONY : CMakeFiles/grepCLI.dir/rule
@@ -102,13 +105,45 @@ grepCLI: CMakeFiles/grepCLI.dir/rule
 # codegen rule for target.
 CMakeFiles/grepCLI.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target grepCLI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=1,2,3 "Finished codegen for target grepCLI"
 .PHONY : CMakeFiles/grepCLI.dir/codegen
 
 # clean rule for target.
 CMakeFiles/grepCLI.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/clean
 .PHONY : CMakeFiles/grepCLI.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=4,5,6,7 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+.PHONY : tests
+
+# codegen rule for target.
+CMakeFiles/tests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" --progress-num=4,5,6,7 "Finished codegen for target tests"
+.PHONY : CMakeFiles/tests.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,83 +1,49 @@
 #include <iostream>
-#include <fstream>
-#include <filesystem>
-#include <vector>
-#include <optional>
+#include "../include/grep.h"
 
 
 
-std::string highlightFoundPattern(const std::string &text, const std::string &sub) {
-    std::string result;
-    size_t pos = 0, found;
+/* ==== Whay I learned from this project ====
+ *
+- RAII resource management (automatic file closing)
 
-    // ANSI escape codes
-    const std::string red = "\033[31m";   // red text
-    const std::string reset = "\033[0m";  // reset to default
+- Efficient string searching using std::string::find
 
-    while ((found = text.find(sub, pos)) != std::string::npos) {
-        result += text.substr(pos, found - pos);   // normal text
-        result += red + sub + reset;               // highlighted substring
-        pos = found + sub.size();
-    }
-    result += text.substr(pos); // remaining text
-    return result;
-}
+- Comprehensive error handling
 
+- Configurable options (case Insensitive, line numbers, etc.)
 
-bool isPatternFound(const std::string& line , const std::string& pattern) {
-    for (int i = 0 ;i < (int) line.size();) {
-        if (line[i] == pattern[0]) {
-            int j = 0;
-            while ( j < (int) pattern.size() && line[i] == pattern[j]) {
-                i++;
-                j++;
-            }
-            if (j == pattern.size())
-                return true;
-        } else
-            i++;
-    }
-    return false;
-}
+- Recursive directory search
 
-void printLines(const std::vector<std::string>& lines) {
-    for (const std::string& line : lines)
-        std::cout << line << std::endl;
-}
+- Proper const correctness and modern C++ features
 
-std::optional<std::ifstream> openFile(std::filesystem::path& path) {
-    std::ifstream file(path);
+- Comprehensive Catch2 test suite
 
-    if (!file.is_open()) {
-        return std::nullopt;
-    }
-    return file;
-}
+- Better command line interface
 
-void grep(std::filesystem::path& path, const std::string& pattern) {
-    std::optional<std::ifstream> file = openFile(path);
-
-    std::string line;
-    std::vector<std::string> lines;
-
-    while (getline(file.value(), line)) {
-        if (isPatternFound(line , pattern)) {
-            std::string result = highlightFoundPattern(line , pattern);
-            lines.push_back(result);
-        }
-    }
-
-    printLines(lines);
-    file->close();
-}
+ */
 
 
 int main(int argc , char* argv[]) {
     if (argc < 2) {
-        std::cerr << "The arguments number isn't enough." << std::endl;
-    } else {
-        std::filesystem::path path{argv[1]};
-        grep(path, argv[2]);
+        std::cerr << "the arguments number isn't enough." << "\n";
     }
+    if (argc < 3) {
+        std::cerr << "usage: " << argv[0] << " <filename> <pattern>" << std::endl;
+        std::cerr << "example: " << argv[0] << " file.txt \"search text\"" << std::endl;
+        return 1;
+    }
+
+    std::filesystem::path path{argv[1]};
+    if (!std::filesystem::exists(path)) {
+        std::cerr << "the path is not found" << "\n";
+        return 0;
+    }
+    if (std::filesystem::is_directory(path)) {
+        std::cerr << "this is not a directory" << "\n";
+        return 0;
+    }
+    std::string pattern {argv[2]};
+    grep::grep(path , pattern);
     return 0;
 }

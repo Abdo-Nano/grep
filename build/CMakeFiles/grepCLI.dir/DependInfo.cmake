@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/sdb1/computer science/projects/grepCLI/src/grep.cpp" "CMakeFiles/grepCLI.dir/src/grep.cpp.o" "gcc" "CMakeFiles/grepCLI.dir/src/grep.cpp.o.d"
   "/mnt/sdb1/computer science/projects/grepCLI/src/main.cpp" "CMakeFiles/grepCLI.dir/src/main.cpp.o" "gcc" "CMakeFiles/grepCLI.dir/src/main.cpp.o.d"
   "" "grepCLI" "gcc" "CMakeFiles/grepCLI.dir/link.d"
   )

@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = "/mnt/sdb1/computer science/projects/grepCLI/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -91,13 +101,6 @@ all: cmake_check_build_system
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 0
 .PHONY : all
-
-# The main codegen target
-codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" "/mnt/sdb1/computer science/projects/grepCLI/build//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles" 0
-.PHONY : codegen
 
 # The main clean target
 clean:
@@ -136,6 +139,46 @@ grepCLI/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/build
 .PHONY : grepCLI/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+src/grep.o: src/grep.cpp.o
+.PHONY : src/grep.o
+
+# target to build an object file
+src/grep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/src/grep.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/grep.cpp.o
+.PHONY : src/grep.cpp.o
+
+src/grep.i: src/grep.cpp.i
+.PHONY : src/grep.i
+
+# target to preprocess a source file
+src/grep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/src/grep.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/grep.cpp.i
+.PHONY : src/grep.cpp.i
+
+src/grep.s: src/grep.cpp.s
+.PHONY : src/grep.s
+
+# target to generate assembly for a file
+src/grep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/src/grep.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/grep.cpp.s
+.PHONY : src/grep.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -160,19 +203,77 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/grepCLI.dir/build.make CMakeFiles/grepCLI.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/main.o: tests/main.cpp.o
+.PHONY : tests/main.o
+
+# target to build an object file
+tests/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/main.cpp.o
+.PHONY : tests/main.cpp.o
+
+tests/main.i: tests/main.cpp.i
+.PHONY : tests/main.i
+
+# target to preprocess a source file
+tests/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/main.cpp.i
+.PHONY : tests/main.cpp.i
+
+tests/main.s: tests/main.cpp.s
+.PHONY : tests/main.s
+
+# target to generate assembly for a file
+tests/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/main.cpp.s
+.PHONY : tests/main.cpp.s
+
+tests/test_grep.o: tests/test_grep.cpp.o
+.PHONY : tests/test_grep.o
+
+# target to build an object file
+tests/test_grep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_grep.cpp.o
+.PHONY : tests/test_grep.cpp.o
+
+tests/test_grep.i: tests/test_grep.cpp.i
+.PHONY : tests/test_grep.i
+
+# target to preprocess a source file
+tests/test_grep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_grep.cpp.i
+.PHONY : tests/test_grep.cpp.i
+
+tests/test_grep.s: tests/test_grep.cpp.s
+.PHONY : tests/test_grep.s
+
+# target to generate assembly for a file
+tests/test_grep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_grep.cpp.s
+.PHONY : tests/test_grep.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... grepCLI"
+	@echo "... tests"
+	@echo "... src/grep.o"
+	@echo "... src/grep.i"
+	@echo "... src/grep.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/main.o"
+	@echo "... tests/main.i"
+	@echo "... tests/main.s"
+	@echo "... tests/test_grep.o"
+	@echo "... tests/test_grep.i"
+	@echo "... tests/test_grep.s"
 .PHONY : help
 
 

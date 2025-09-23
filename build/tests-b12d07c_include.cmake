@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/sdb1/computer science/projects/grepCLI/build/tests-b12d07c_tests.cmake")
+  include("/mnt/sdb1/computer science/projects/grepCLI/build/tests-b12d07c_tests.cmake")
+else()
+  add_test(tests_NOT_BUILT-b12d07c tests_NOT_BUILT-b12d07c)
+endif()

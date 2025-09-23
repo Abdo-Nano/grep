@@ -104,12 +104,13 @@ CMakeFiles/grepCLI.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/ostream_insert.h \
  /usr/include/c++/14/bits/cxxabi_forced.h \
  /usr/include/c++/14/bits/stl_iterator.h \
- /usr/include/c++/14/ext/type_traits.h /usr/include/c++/14/bits/utility.h \
+ /usr/include/c++/14/ext/type_traits.h \
  /usr/include/c++/14/bits/stl_function.h \
  /usr/include/c++/14/backward/binders.h \
  /usr/include/c++/14/ext/numeric_traits.h \
  /usr/include/c++/14/bits/stl_algobase.h \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/debug/debug.h \
+ /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/bits/utility.h \
+ /usr/include/c++/14/debug/debug.h \
  /usr/include/c++/14/bits/predefined_ops.h /usr/include/c++/14/bit \
  /usr/include/c++/14/bits/refwrap.h /usr/include/c++/14/bits/invoke.h \
  /usr/include/c++/14/bits/range_access.h \
@@ -120,14 +121,7 @@ CMakeFiles/grepCLI.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/functional_hash.h \
  /usr/include/c++/14/bits/ranges_base.h \
  /usr/include/c++/14/bits/max_size_type.h /usr/include/c++/14/numbers \
- /usr/include/c++/14/bits/string_view.tcc /usr/include/c++/14/charconv \
- /usr/include/c++/14/bits/charconv.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
- /usr/include/c++/14/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/14/bits/string_view.tcc \
  /usr/include/c++/14/ext/string_conversions.h /usr/include/c++/14/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -145,26 +139,22 @@ CMakeFiles/grepCLI.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/14/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/14/bits/charconv.h \
  /usr/include/c++/14/bits/basic_string.tcc \
  /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
  /usr/include/c++/14/bits/uses_allocator.h \
  /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/ranges_util.h /usr/include/c++/14/text_encoding \
- /usr/include/c++/14/bits/unicode.h /usr/include/c++/14/array \
- /usr/include/c++/14/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/14/bits/stl_algo.h \
- /usr/include/c++/14/bits/algorithmfwd.h \
- /usr/include/c++/14/bits/stl_heap.h \
- /usr/include/c++/14/bits/uniform_int_dist.h \
- /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/bits/unicode-data.h \
- /usr/include/c++/14/bits/text_encoding-data.h \
+ /usr/include/c++/14/bits/ranges_util.h \
  /usr/include/c++/14/bits/locale_classes.tcc \
- /usr/include/c++/14/system_error /usr/include/c++/14/stdexcept \
- /usr/include/c++/14/streambuf /usr/include/c++/14/bits/streambuf.tcc \
+ /usr/include/c++/14/system_error \
+ /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
+ /usr/include/c++/14/stdexcept /usr/include/c++/14/streambuf \
+ /usr/include/c++/14/bits/streambuf.tcc \
  /usr/include/c++/14/bits/basic_ios.h \
  /usr/include/c++/14/bits/locale_facets.h /usr/include/c++/14/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
@@ -172,36 +162,36 @@ CMakeFiles/grepCLI.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h \
  /usr/include/c++/14/bits/locale_facets.tcc \
- /usr/include/c++/14/bits/basic_ios.tcc /usr/include/c++/14/format \
- /usr/include/c++/14/limits /usr/include/c++/14/locale \
- /usr/include/c++/14/bits/locale_facets_nonio.h /usr/include/c++/14/ctime \
+ /usr/include/c++/14/bits/basic_ios.tcc \
+ /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
+ /usr/include/c++/14/bits/istream.tcc \
+ /mnt/sdb1/computer\ science/projects/grepCLI/src/../include/grep.h \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/filesystem \
+ /usr/include/c++/14/bits/fs_fwd.h /usr/include/c++/14/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
+ /usr/include/c++/14/limits /usr/include/c++/14/ctime \
+ /usr/include/c++/14/bits/parse_numbers.h \
+ /usr/include/c++/14/bits/fs_path.h /usr/include/c++/14/locale \
+ /usr/include/c++/14/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/14/bits/codecvt.h \
  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
- /usr/include/c++/14/bits/locale_conv.h /usr/include/c++/14/optional \
- /usr/include/c++/14/bits/enable_special_members.h \
- /usr/include/c++/14/span /usr/include/c++/14/variant \
- /usr/include/c++/14/bits/parse_numbers.h \
- /usr/include/c++/14/bits/ranges_algobase.h \
- /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/fstream \
- /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h \
- /usr/include/c++/14/bits/fstream.tcc /usr/include/c++/14/filesystem \
- /usr/include/c++/14/bits/fs_fwd.h /usr/include/c++/14/bits/chrono.h \
- /usr/include/c++/14/ratio /usr/include/c++/14/bits/fs_path.h \
- /usr/include/c++/14/iomanip /usr/include/c++/14/bits/quoted_string.h \
- /usr/include/c++/14/sstream /usr/include/c++/14/bits/sstream.tcc \
- /usr/include/c++/14/codecvt /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/locale_conv.h /usr/include/c++/14/iomanip \
+ /usr/include/c++/14/bits/quoted_string.h /usr/include/c++/14/sstream \
+ /usr/include/c++/14/bits/sstream.tcc /usr/include/c++/14/codecvt \
+ /usr/include/c++/14/ext/concurrence.h \
  /usr/include/c++/14/bits/shared_ptr.h \
  /usr/include/c++/14/bits/shared_ptr_base.h \
  /usr/include/c++/14/bits/allocated_ptr.h \
  /usr/include/c++/14/bits/unique_ptr.h \
  /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/bits/align.h \
- /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/fs_dir.h /usr/include/c++/14/bits/fs_ops.h \
- /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc
+ /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/fs_dir.h \
+ /usr/include/c++/14/bits/fs_ops.h /usr/include/c++/14/optional \
+ /usr/include/c++/14/bits/enable_special_members.h

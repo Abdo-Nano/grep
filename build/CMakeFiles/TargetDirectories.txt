@@ -1,3 +1,5 @@
 /mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/grepCLI.dir
+/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/tests.dir
+/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/test.dir
 /mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/edit_cache.dir
 /mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/rebuild_cache.dir
