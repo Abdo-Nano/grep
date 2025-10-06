@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/tests.dir/link.d CMakeFiles/tests.dir/tests/main.cpp.o CMakeFiles/tests.dir/tests/test_grep.cpp.o CMakeFiles/tests.dir/src/grep.cpp.o -o tests  /usr/local/lib/libCatch2Main.a /usr/local/lib/libCatch2.a

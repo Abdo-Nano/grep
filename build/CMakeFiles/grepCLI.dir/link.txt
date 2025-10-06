@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/grepCLI.dir/link.d CMakeFiles/grepCLI.dir/src/main.cpp.o CMakeFiles/grepCLI.dir/src/grep.cpp.o -o grepCLI
