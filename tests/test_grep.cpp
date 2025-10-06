@@ -6,7 +6,6 @@
 #include <filesystem>
 #include "../include/grep.h"
 
-// using namespace Catch::Matchers;
 
 TEST_CASE("highlightFoundPattern function", "[highlight]") {
     SECTION("Highlights single occurrence") {
