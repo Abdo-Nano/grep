@@ -3,9 +3,9 @@
 
 
 
-/* ==== Whay I learned from this project ====
+/* ==== What I learned from this project ====
  *
-- RAII resource management (automatic file closing)
+- RAII resource management (automatic file closing) (Getting out of scope)
 
 - Efficient string searching using std::string::find
 

@@ -57,7 +57,7 @@ namespace grep {
         return std::move(file);
     }
 
-    void grep(const std::filesystem::path& path, const std::string& pattern){
+   void grep(const std::filesystem::path& path, const std::string& pattern){
         if (auto file = openFile(path)) {
             std::string line;
             std::vector<std::string> lines;

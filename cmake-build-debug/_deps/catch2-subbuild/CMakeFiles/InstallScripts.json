@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug/_deps/catch2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
