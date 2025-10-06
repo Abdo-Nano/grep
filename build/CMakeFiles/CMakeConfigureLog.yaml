@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/CMakeScratch/TryCompile-PXoaYa"
-      binary: "/mnt/sdb1/computer science/projects/grepCLI/build/CMakeFiles/CMakeScratch/TryCompile-PXoaYa"
+      source: "/mnt/sdb1/computer science/projects/grep/build/CMakeFiles/CMakeScratch/TryCompile-PXoaYa"
+      binary: "/mnt/sdb1/computer science/projects/grep/build/CMakeFiles/CMakeScratch/TryCompile-PXoaYa"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"

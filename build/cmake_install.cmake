@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/sdb1/computer science/projects/grepCLI
+# Install script for directory: /mnt/sdb1/computer science/projects/grep
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: grepCLI
+# Project: grep
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__grepCLI_Debug
+rule CXX_SCAN__grep_Debug
   depfile = $DEP_FILE
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -23,8 +23,8 @@ rule CXX_SCAN__grepCLI_Debug
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__grepCLI_Debug
-  command = /snap/clion/385/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/grepCLI.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+rule CXX_DYNDEP__grep_Debug
+  command = /snap/clion/385/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/grep.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -34,7 +34,7 @@ rule CXX_DYNDEP__grepCLI_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__grepCLI_scanned_Debug
+rule CXX_COMPILER__grep_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -44,7 +44,7 @@ rule CXX_COMPILER__grepCLI_scanned_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__grepCLI_unscanned_Debug
+rule CXX_COMPILER__grep_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -54,7 +54,7 @@ rule CXX_COMPILER__grepCLI_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__grepCLI_Debug
+rule CXX_EXECUTABLE_LINKER__grep_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
@@ -125,7 +125,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/385/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/mnt/sdb1/computer science/projects/grepCLI" -B"/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug"
+  command = /snap/clion/385/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/mnt/sdb1/computer science/projects/grep" -B"/mnt/sdb1/computer science/projects/grep/cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 

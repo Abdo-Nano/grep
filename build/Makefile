@@ -127,7 +127,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named grepCLI
+# Target rules for targets named grep
 
 # Build rule for target.
 grepCLI: cmake_check_build_system

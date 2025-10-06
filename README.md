@@ -6,7 +6,27 @@
 
 
 ## Installation instructions
-> 
+
+```bash
+git clone https://github.com/Abdo-Nano/grep
+cd grep
+
+# Create and enter build directory (not in repo)
+mkdir build && cd build
+
+# Configure and build
+cmake ..
+make
+
+# Run tests (if any)
+./tests/test_grep
+
+# Install (optional)
+sudo make install
+```
 
 
-# grep
+## How to use the utility 
+> ./grep fileName pattern
+
+

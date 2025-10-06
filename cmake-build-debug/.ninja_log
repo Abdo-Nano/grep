@@ -1,11 +1,7 @@
 # ninja log v6
 1372	1502	1758608612344081500	grepCLI	177c1d745575346d
-4	1728	1758608027867298100	CMakeFiles/grepCLI.dir/src/grep.cpp.o	cf1e7fe8842704fa
 4	596	1758609108773383400	tests-b12d07c_tests.cmake	3d8dfaf5d7ea36d2
-4	596	1758609108773383400	/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug/tests-b12d07c_tests.cmake	3d8dfaf5d7ea36d2
-3	55	1759761436839590500	/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug/cmake_install.cmake	dde3a3ee06991336
 4	596	1758609108773383400	tests	3d8dfaf5d7ea36d2
-4	1372	1758608610975651000	CMakeFiles/grepCLI.dir/src/main.cpp.o	ad7276d77313fa36
 4	2409	1758608809838621000	CMakeFiles/tests.dir/tests/test_grep.cpp.o	3b542e95e2e849fc
 3	2324	1758608634651143800	CMakeFiles/tests.dir/tests/main.cpp.o	f6de0c7bafac4243
-3	55	1759761436844185500	build.ninja	dde3a3ee06991336
+3	55	1759763128672674700	build.ninja	dde3a3ee06991336
