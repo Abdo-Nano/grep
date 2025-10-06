@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug/grep_tests-b12d07c_tests.cmake")
-  include("/mnt/sdb1/computer science/projects/grepCLI/cmake-build-debug/grep_tests-b12d07c_tests.cmake")
-else()
-  add_test(grep_tests_NOT_BUILT-b12d07c grep_tests_NOT_BUILT-b12d07c)
-endif()

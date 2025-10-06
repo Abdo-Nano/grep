@@ -1,5 +1,0 @@
-hello world
-cpp
-ptyhoon
-rust
-C
